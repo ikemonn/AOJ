@@ -1,4 +1,7 @@
 loop do
-  break if gets.split.map(&:to_i).zero?
-  puts gets.split.map(&:to_i)
+  x = gets
+  break if x.to_i == 0
+  sum = 0
+  x.gsub(/\d/){ sum += $&.to_i }
+  puts sum
 end
