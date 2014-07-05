@@ -1,9 +1,6 @@
-while (ln = gets.chomp) != '-' do
-  card = ln
-  m = gets.to_i
-  m.times do
-    h = gets.to_i
-    card = card[h, card.length] + card[0, h]
+while (s = gets.chomp) != '-' do
+  gets.to_i.times do
+    s += s.slice!(0, gets.to_i)
   end
-  puts card
+  puts s
 end
