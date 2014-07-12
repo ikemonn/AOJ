@@ -3,18 +3,10 @@ array = []
 gets.chomp.split.each do |elem|
 
   if elem =~ /[0-9]/
-    array.push(elem)
+    array << elem
   else
-    a = array.pop.to_i
-    b = array.pop.to_i
-    case elem
-    when '+'
-      array.push(b + a)
-    when '-'
-      array.push(b - a)
-    when '*'
-      array.push(b * a)
-    end
+    a = array.pop(2)
+    array << eval("#{a[0]} #{elem} #{a[1]}")
   end
 
 end
