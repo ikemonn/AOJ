@@ -1,8 +1,9 @@
-7
+8
+insert 1000000000
+insert 999999999
+deleteLast
+insert 1234566890
 insert 5
-insert 2
-insert 3
-insert 1
-delete 3
-insert 6
+deleteFirst
+insert 7
 delete 5
